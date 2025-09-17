@@ -552,13 +552,13 @@
     </div>
 
     <div class="container">
-        <!-- Hero Section -->
+      
         <div class="portfolio-section">
             <div class="glass-card">
                 <div class="hero-section">
                     <div class="profile-container">
                         <div class="profile-img">
-                            <!-- Replace 'your-photo.jpg' with your actual image URL -->
+                          
                             <img src="deez.jpg"
                                 alt="Divyansh Kaushik"
                                 style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
@@ -570,7 +570,7 @@
             </div>
         </div>
 
-        <!-- About Section -->
+     
         <div class="portfolio-section">
             <div class="glass-card">
                 <div style="padding: 60px 40px;">
@@ -588,7 +588,6 @@
             </div>
         </div>
 
-        <!-- Skills Section -->
         <div class="portfolio-section">
             <div class="glass-card">
                 <div style="padding: 60px 40px;">
@@ -647,7 +646,7 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
+      
         <div class="portfolio-section">
             <div class="glass-card">
                 <div style="padding: 60px 40px;">
@@ -680,7 +679,7 @@
                                 <i class="fab fa-instagram"></i>
                             </div>
                             <h3 class="contact-title">Instagram</h3>
-                            <p class="contact-desc">Follow my journey and daily updates</p>
+                            <p class="contact-desc">Follow my instagram handle for daily updates</p>
                             <a href="https://www.instagram.com/deez.k29?igsh=aWN4dHhtNHJxdHl4" class="contact-btn"
                                 target="_blank">
                                 <i class="fab fa-instagram"></i> Follow
@@ -707,13 +706,13 @@
     </div>
 
     <script>
-        // Scroll progress indicator
+       
         window.addEventListener('scroll', () => {
             const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
             document.querySelector('.scroll-indicator').style.transform = `scaleX(${scrollProgress / 100})`;
         });
 
-        // Parallax effect for floating shapes
+        
         document.addEventListener('mousemove', (e) => {
             const shapes = document.querySelectorAll('.shape');
             const x = e.clientX / window.innerWidth;
@@ -727,7 +726,7 @@
             });
         });
 
-        // Intersection Observer for animations
+        
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
@@ -742,7 +741,7 @@
             });
         }, observerOptions);
 
-        // Observe all cards
+   
         document.querySelectorAll('.glass-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(50px)';
@@ -750,7 +749,6 @@
             observer.observe(card);
         });
 
-        // Dynamic background color change
         let colorIndex = 0;
         const colors = [
             'linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%)',
@@ -764,7 +762,6 @@
             document.body.style.background = colors[colorIndex];
         }, 10000);
 
-        // Smooth scrolling for internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -782,3 +779,4 @@
 
 
 </html>
+
