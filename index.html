@@ -1,127 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Divyansh Kaushik - Web Developer</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-<style>
-/* KEEPING YOUR ORIGINAL STYLES (SHORTENED HERE FOR CLARITY) */
-body {
-    font-family: 'Segoe UI';
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: white;
-}
-
-.container { max-width: 1200px; margin: auto; padding: 20px; }
-
-.section-title {
-    text-align: center;
-    font-size: 2.5em;
-    margin: 40px 0;
-}
-
-.glass-card {
-    background: rgba(255,255,255,0.1);
-    padding: 40px;
-    border-radius: 20px;
-    margin: 40px 0;
-}
-
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    gap: 20px;
-}
-
-.skill-card {
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.contact-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: linear-gradient(45deg,#ff6b6b,#4ecdc4);
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
-<!-- HERO -->
-<div class="glass-card" style="text-align:center;">
-    <img src="deez.jpg" style="width:150px; border-radius:50%;">
-    <h1>Divyansh Kaushik</h1>
-    <p>MERN Stack Developer | Full Stack Enthusiast</p>
-</div>
-
-<!-- ABOUT -->
-<div class="glass-card">
-    <h2 class="section-title">About Me</h2>
-    <p>
-        Passionate web developer skilled in MERN stack, C++, Python.
-        I love building full-stack applications and solving real-world problems.
-    </p>
-</div>
-
-<!-- SKILLS -->
-<div class="glass-card">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-container">
-        <div class="skill-card">MERN Stack</div>
-        <div class="skill-card">React.js</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">MongoDB</div>
-        <div class="skill-card">C++</div>
-    </div>
-</div>
-
-<!-- 🔥 PROJECTS SECTION (NEW) -->
+<!-- 🔥 PROJECTS SECTION (FIXED) -->
 <div class="glass-card">
     <h2 class="section-title">Projects</h2>
 
     <div class="skills-container">
 
-        <!-- Project 2 -->
+        <!-- Project -->
         <div class="skill-card">
             <h3>Chat App</h3>
             <p>Real-time chat app using Socket.io</p>
 
-            <a href="https://github.com/Divyansh1129/ChatSpace" target="_blank" class="contact-btn">
+            <a href="https://github.com/Divyansh1129/ChatSpace"
+               target="_blank"
+               class="contact-btn">
                 GitHub
             </a>
 
             <br><br>
 
-            <a href="https://chat-space-eta.vercel.app/" target="_blank" class="contact-btn">
+            <a href="https://chat-space-eta.vercel.app/"
+               target="_blank"
+               class="contact-btn">
                 Live Demo
             </a>
         </div>
 
-<!-- CONTACT -->
-<div class="glass-card">
-    <h2 class="section-title">Contact</h2>
+    </div> <!-- ✅ CLOSE skills-container -->
 
-    <a href="https://github.com/Divyansh1129" target="_blank" class="contact-btn">
-        GitHub
-    </a>
-
-    <a href="https://www.linkedin.com/in/divyansh-kaushik-564475313/" target="_blank" class="contact-btn">
-        LinkedIn
-    </a>
-</div>
-
-</div>
-
-</body>
-</html>
+</div> <!-- ✅ CLOSE glass-card -->
