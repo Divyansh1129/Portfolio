@@ -242,6 +242,22 @@
   .ach-text b{ color:var(--text); display:block; margin-bottom:3px; font-size:14.5px; }
   .ach-text span{ color:var(--text-faint); font-size:13px; }
 
+  /* ---------- DSA PROFILES ---------- */
+  .dsa-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .dsa-card{
+    display:flex; flex-direction:column; gap:14px; padding:22px; border:1px solid var(--line);
+    border-radius:8px; background:var(--panel); transition:border-color .2s, transform .2s;
+  }
+  .dsa-card:hover{ border-color:var(--mint-dim); transform:translateY(-3px); }
+  .dsa-top{ display:flex; align-items:center; justify-content:space-between; }
+  .dsa-platform{ font-family:var(--mono); font-weight:700; font-size:16px; color:#f2f6fa; }
+  .dsa-badge{
+    font-family:var(--mono); font-size:11.5px; color:var(--mint); border:1px solid var(--mint-dim);
+    padding:4px 9px; border-radius:20px; letter-spacing:0.02em;
+  }
+  .dsa-stat{ font-family:var(--mono); font-size:13px; color:var(--text-dim); }
+  .dsa-stat b{ color:var(--text); font-weight:600; }
+
   /* ---------- CONTACT ---------- */
   .contact-panel{
     border:1px solid var(--line); border-radius:10px; padding:48px; text-align:center;
@@ -257,6 +273,7 @@
     .about-grid{ grid-template-columns:1fr; }
     .skill-groups{ grid-template-columns:1fr 1fr; }
     .ach-grid{ grid-template-columns:1fr; }
+    .dsa-grid{ grid-template-columns:1fr; }
     .navlinks{ display:none; }
     .navtoggle{ display:block; }
   }
@@ -280,6 +297,7 @@
       <a href="#about">about</a>
       <a href="#skills">skills</a>
       <a href="#projects">projects</a>
+      <a href="#dsa">dsa</a>
       <a href="#education">education</a>
       <a href="#achievements">achievements</a>
       <a href="#contact" class="resume-link">contact</a>
@@ -524,10 +542,37 @@
   </div>
 </section>
 
-<section id="education">
+<section id="dsa">
   <div class="wrap">
     <div class="sec-head">
       <span class="sec-num">04</span>
+      <span class="sec-title">dsa_profiles.json</span>
+    </div>
+    <div class="dsa-grid">
+      <a class="dsa-card" href="https://www.codechef.com/users/agile_wolf_19" target="_blank" rel="noopener">
+        <div class="dsa-top">
+          <span class="dsa-platform">CodeChef</span>
+          <span class="dsa-badge">2★</span>
+        </div>
+        <div class="dsa-stat">Rating: <b>1400+</b></div>
+        <div class="icon-link"><span>agile_wolf_19</span> ↗</div>
+      </a>
+      <a class="dsa-card" href="https://leetcode.com/u/Divyansh1129/" target="_blank" rel="noopener">
+        <div class="dsa-top">
+          <span class="dsa-platform">LeetCode</span>
+          <span class="dsa-badge">250+ solved</span>
+        </div>
+        <div class="dsa-stat">Questions solved: <b>250+</b></div>
+        <div class="icon-link"><span>Divyansh1129</span> ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">05</span>
       <span class="sec-title">education.log</span>
     </div>
     <div class="edu-list">
@@ -559,7 +604,7 @@
 <section id="achievements">
   <div class="wrap">
     <div class="sec-head">
-      <span class="sec-num">05</span>
+      <span class="sec-num">06</span>
       <span class="sec-title">achievements.txt</span>
     </div>
     <div class="ach-grid">
